@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,100&display=swap');
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: orange;
+}
+
+.navbar-info {
+    color: black;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navbar-info:hover{
+    background-color: #FFF56D;
+}
+
+
+.logo-img {
+    width: 100px;
+    height: auto;
+    margin-left: auto;
+   
+}
+
+.menu-container {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #0a0a0a;
+}
+
+.imagen-1{
+    width: 800px;
+    height: auto;
+}
+
+.menu-info h2 {
+    margin-bottom: 20px;
+    font-size: 50px;
+    color: orange;
+}
+
+.menu-info p {
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: orange;
+}
+
+.btn-1 {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.section-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: wheat;
+}
+
+.info-img{
+    width: auto;
+}
+
+.info-img img{
+    width: 650px;
+    height: 550px;
+}
+
+.info-txt{
+    width: 50%;
+    text-align: center;
+    
+    
+    
+}
+
+.info-txt h2{
+    font-size: 75px;
+    color: black;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.info-txt p{
+    font-size: 20px;
+    margin-bottom: 50px;
+    color: black;
+}
+ .btn-2{
+    background-color: orange;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.btn-2:hover{
+    transform: scale(1.05);
+}
+
+
+.introduccion {
+    text-align: center;
+    padding: 20px;
+    background-color: orange;
+}
+
+.introduccion h2{
+    font-size: 75px;
+}
+.introduccion p{
+    font-size: 20px;
+}
+
+.carta-menu-1 {
+    padding: 20px;
+    background-color: #0a0a0a;
+}
+
+.carrusel-contenido-1 {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.carrusel-productos-1 {
+    flex: 0 0 auto;
+    width: 300px;
+    margin-right: 20px;
+    scroll-snap-align: start;
+}
+
+.imagen-2 {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.carta-menu-2 {
+    padding: 20px;
+    background-color: #0a0a0a;
+}
+
+.carrusel-contenido-2 {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.carrusel-productos-2 {
+    flex: 0 0 auto;
+    width: 300px;
+    margin-right: 20px;
+    scroll-snap-align: start;
+}
+
+.imagen-3 {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.carta-menu-1 h3{
+    color: orange;
+}
+
+.carta-menu-2 h3{
+    color: orange;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+}
+  
+.footer h3 {
+    grid-column: span 4;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: wheat;
+}
+  
+.footer-link, .footer-info {
+    margin-bottom: 20px;
+}
+  
+.footer h4 {
+    font-size: 20px;
+    color: wheat;
+    margin-bottom: 10px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+  
+.footer ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+  
+  
+.footer ul li a img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s;
+}
+  
+.footer ul li a img:hover {
+    transform: scale(1.1);
+}
+
+
+.footer-info p {
+    font-size: 20px;
+    margin: 5px 0;
+    color: orange;
+}
+
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    font-size: 24px;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    z-index: 1000;
+    transition: bottom 0.1s; 
+  }
+
+/* Responsividad */
+
+@media (max-width: 1024px) {
+    
+
+    .menu-container {
+        padding: 30px 15px;
+    }
+
+    .imagen-1 {
+        width: 600px;
+        height: auto;
+    }
+
+    .menu-info h2 {
+        font-size: 40px;
+    }
+
+    .menu-info p {
+        font-size: 20px;
+    }
+
+    .section-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+    }
+
+    .info-img img {
+        width: 500px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .info-txt {
+        width: 100%;
+        text-align: center;
+    }
+
+    .info-txt h2 {
+        font-size: 50px;
+    }
+
+    .info-txt p {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .introduccion h2 {
+        font-size: 50px;
+    }
+
+    .introduccion p {
+        font-size: 18px;
+    }
+
+    .carrusel-productos-1, .carrusel-productos-2 {
+        width: 250px;
+        margin-right: 15px;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+    }
+
+    .footer h3 {
+        font-size: 1.7em;
+    }
+
+    .footer h4 {
+        font-size: 1.2em;
+    }
+
+    .footer ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer ul li {
+        margin: 0 5px;
+    }
+
+    .footer ul li a img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 840px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .imagen-1{
+        flex-direction: column;
+        width: 400px;
+    }
+
+    .logo-img{
+        height: auto;
+        margin: auto;
+
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+    }
+
+    .footer h3 {
+        font-size: 1.5em;
+    }
+    
+    .footer h4 {
+        font-size: 1.1em;
+    }
+    
+    .footer ul {
+        flex-direction: column;
+    }
+    
+    .footer ul li {
+        margin: 10px 0;
+    }
+    
+
+    .section-container{
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .info-img{
+        width: 100%;
+        text-align: center;
+    }
+
+    .info-img img{
+        width: 400px;
+        height: 400px;
+        margin-bottom: 25px;
+    }
+
+    .info-txt{
+        width: 100%;
+        text-align: center;
+    }
+
+    .info-txt h2{
+        font-size: 30px;
+    }
+
+    .info-txt p{
+        font-size: 20px;
+    }
+
+    .introduccion h2{
+        font-size: 30px;
+    }
+
+    .introduccion p{
+        font-size: 20px;
+    }
+
+    
+    .carrusel-contenido-1, .carrusel-contenido-2 {
+        justify-content: flex-start;
+    }
+
+    .carrusel-productos-1, .carrusel-productos-2 {
+        width: 250px;
+    }
+
+    .menu-info h2 {
+        font-size: 30px;
+    }
+
+    .menu-info p{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-info {
+        font-size: 14px;
+        margin-right: 10px;
+    }
+
+    .footer h3 {
+        font-size: 20px;
+    }
+    
+    .footer h4 {
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+    
+    .footer-info p {
+        font-size: 0.85em;
+    }
+    
+    .footer ul li a img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .carrusel-productos-1, .carrusel-productos-2 {
+        width: 200px;
+    }
+
+    .menu-info h2 {
+        font-size: 20px;
+    }
+
+    .btn-1 {
+        padding: 8px 16px;
+    }
+
+    .imagen-1{
+        flex-direction: column;
+        width: 200px;
+    }
+
+    .info-img img{
+        flex-direction: column;
+        width: 200px;
+        height: 200px;
+
+    }
+}
+
+@media (max-width: 320px) {
+    .footer {
+        grid-template-columns: 1fr;
+        padding: 30px 15px;
+        gap: 15px;
+    }
+
+    .footer h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .footer h4 {
+        font-size: 10px;
+        margin-bottom: 8px;
+    }
+
+    .footer ul {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer ul li {
+        margin: 0 5px;
+    }
+
+    .footer ul li a img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer-info p {
+        font-size: 0.85em;
+        margin: 4px 0;
+    }
+
+    .whatsapp-float {
+        font-size: 20px;
+        padding: 12px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
